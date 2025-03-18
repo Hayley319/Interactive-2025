@@ -19,6 +19,32 @@ body {
     overflow: hidden;
 }
 
+.video-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+.video-container .side-images {
+            display: flex;
+            justify-content: center;
+           
+            margin-top: 10px;
+        }
+.video-container img {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+        }
+.center-images {
+            display: flex;
+            justify-content: center;
+           
+            margin: 30px;
+        }
+
+
+
 .quote {
     font-size: 2rem;
     color: #ff5700;

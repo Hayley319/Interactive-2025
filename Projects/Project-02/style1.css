@@ -1,0 +1,64 @@
+/* Background for the Main Nezha Page */
+body.nezha-main-bg {
+    background: linear-gradient(to bottom, #2e2b5f, #c43d3d); /* Dark blue to red gradient */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nezha Section Layout */
+.nezha-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nezha-section img {
+    width: 40%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.nezha-text {
+    width: 55%;
+    text-align: left;
+}
+
+.nezha-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.nezha-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nezha-button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
