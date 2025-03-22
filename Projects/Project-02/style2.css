@@ -1,5 +1,4 @@
 /* Nezha Webpage Styling */
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -8,6 +7,7 @@ body {
     text-align: center;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
@@ -19,29 +19,32 @@ body {
     overflow: hidden;
 }
 
+/* Video Container */
 .video-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            position: relative;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 50px auto;
+}
+
 .video-container .side-images {
-            display: flex;
-            justify-content: center;
-           
-            margin-top: 10px;
-        }
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .video-container img {
-            width: 300px; /* Adjust size as needed */
-            height: auto;
-        }
+    width: 1000px; 
+    height: auto;
+}
+
 .center-images {
-            display: flex;
-            justify-content: center;
-           
-            margin: 30px;
-        }
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
 
 /* Centering Images */
 .image-container {
@@ -74,14 +77,15 @@ body {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-row img:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
-
+/* Quote Styling */
 .quote {
     font-size: 2rem;
     color: #ff5700;
@@ -89,6 +93,7 @@ body {
     text-shadow: 2px 2px 10px rgba(255, 87, 0, 0.8);
 }
 
+/* Fire Animation */
 .fire-animation {
     position: absolute;
     bottom: 0;
@@ -103,6 +108,7 @@ body {
     100% { background-position: 100px 0; }
 }
 
+/* Content Styling */
 .content {
     padding: 50px;
 }
@@ -112,6 +118,7 @@ body {
     color: #ff5700;
     text-shadow: 2px 2px 10px rgba(255, 87, 0, 0.8);
 }
+
 /* Navigation Buttons */
 .button-container {
     display: flex;
@@ -137,4 +144,96 @@ body {
     background-color: white;
     color: black;
     transform: scale(1.1);
+}
+
+/* Print Button */
+.print-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.print-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Video Thumbnail Styling */
+.video-thumbnail {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .video-container img,
+    .image-row img,
+    .center-image {
+        width: 90%; /* Adjust image size for smaller screens */
+    }
+
+    .nezha-button, .print-button {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Print Optimization */
+@media print {
+    body {
+        color: black;
+        background: white;
+        margin: 0;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .hero, .fire-animation, .print-button, .nezha-button, .button-container {
+        display: none;
+    }
+
+    .nezha-section, .content, .image-container, .video-container, .footer {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .quote {
+        color: black;
+        text-shadow: none;
+    }
+
+    h1, h2, p {
+        text-align: center;
+        color: black;
+    }
 }

@@ -73,3 +73,28 @@ footer {
     color: black;
     transform: scale(1.1);
 }
+@media print {
+    body {
+        color: black;
+        background: white;
+        margin: 0;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .nezha-section, .content, .image-container, .video-container, .footer {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .print-button {
+        display: none;
+    }
+}
+

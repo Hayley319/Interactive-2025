@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Legend of Nezha</title>
     <link rel="stylesheet" href="style1.css"> <!-- Linking to external CSS file -->
+    <link rel="stylesheet" href="print.css" media="print"> <!-- Print CSS -->
+    <script src="script.js" defer></script> <!-- External JS -->
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
 </head>
 <body class="nezha-main-bg"> <!-- New background class -->
 
@@ -17,15 +24,16 @@
         <h2>Who is Nezha?</h2>
         <p>
             Nezha is one of the most famous mythological heroes in Chinese folklore. Known for his rebellious spirit and heroic destiny, 
-            Nezha is a young warrior who challenges fate and stands against oppression. He first appeared in the classic novel Investiture of the Gods (封神演义).
+            Nezha is a young warrior who challenges fate and stands against oppression. He first appeared in the classic novel 
+            *Investiture of the Gods* (封神演义).
         </p>
     </section>
 
-   <!-- Section 1: Nezha’s Rebirth -->
+    <!-- Section 1: Nezha’s Rebirth -->
     <section class="nezha-section">
         <img src="https://i.postimg.cc/xCf518bQ/6.jpg" alt="Nezha’s Rebirth">
         <div class="nezha-text">
-            <h2>Nezha’s Rebirth （1961）</h2>
+            <h2>Nezha’s Rebirth (1961)</h2>
             <p>
                 After sacrificing himself, Nezha was reborn using lotus roots. With a fire-tipped spear and wind-fire wheels, 
                 he became a warrior ready to fight against destiny.
@@ -64,6 +72,10 @@
         <a href="index2.html" class="nezha-button">Learn about Nezha (2019)</a>
     </div>
 
-   
+ <div class="button-container">
+    <a href="javascript:window.print();" class="print-button">Print This Page</a>
+</div>
+
+
 </body>
 </html>
