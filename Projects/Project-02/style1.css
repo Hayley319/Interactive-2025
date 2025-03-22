@@ -114,28 +114,37 @@ h1, h2, p, .quote {
     }
 }
 
-/* Print Optimization */
+/* Home Page Print Optimization */
 @media print {
-    body {
-        color: black;
-        background: white;
-        margin: 0;
+    .print-section {
+        page-break-before: always;
+        margin: 0 auto;
         padding: 20px;
-        font-size: 14px;
-        line-height: 1.5;
+        width: 100%;
     }
 
-    .nezha-section, .content, .image-container, .video-container, .footer {
-        margin: 20px auto;
+    .print-section:first-of-type {
+        page-break-before: auto; /* Avoid page break before the first section */
+    }
+
+    .print-section h2 {
+        margin-top: 0;
+        font-size: 24px;
         text-align: center;
     }
 
-    img {
+    .print-section p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px auto;
+    }
+
+    .print-section img {
         width: 80%;
         margin: 10px auto;
     }
 
-    .print-button, .nezha-button, .button-container {
+    .button-container, .print-button, .nezha-button {
         display: none;
     }
 }
