@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head>
-   <title>Here's my first HTML page!</title>
-   <meta charset="utf-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 2 – Inspector Sketches</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+    .link-section {
+      margin-top: 40px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .link-section a {
+      color: #1769ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-section a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .image-grid {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .image-grid img {
+        width: 45%;
+      }
+    }
+  </style>
 </head>
+<body>
+
+  <h1>Exercise 2: Inspector Sketches</h1>
+
+  <div class="image-grid">
+    <img src="https://i.postimg.cc/SRW8zR2C/Screenshot-2025-05-03-at-11-55-59-AM.png" alt="Screenshot 1">
+    <img src="https://i.postimg.cc/NGpQQYPz/Screenshot-2025-05-03-at-11-56-09-AM.png" alt="Screenshot 2">
+  </div>
+
+  <div class="link-section">
+    <p>Explore more at <a href="https://www.theverge.com/" target="_blank">The Verge</a></p>
+  </div>
+
+</body>
+</html>
