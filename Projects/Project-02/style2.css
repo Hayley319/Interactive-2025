@@ -54,7 +54,7 @@ body {
 
 /* Center Image */
 .center-image {
-    width: 70%; /* Larger for the main image */
+    width: 70%; /*first image*/
     max-width: 500px;
     height: auto;
     margin: 20px auto;
@@ -71,7 +71,7 @@ body {
 }
 
 .image-row img {
-    width: 100%; /* Slightly smaller than the main image */
+    width: 100%; /* 2 image */
     max-width: 500px;
     height: auto;
     margin: 10px;
